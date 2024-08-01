@@ -81,9 +81,9 @@
     - modify in package.json:
 
     ****************************************************************
-    "scripts": {
-    "start": "nodemon dist/index.js",
-    "build": "tsc",
-    "dev": "ts-node src/index.ts
+    - "scripts": {
+    - "start": "nodemon dist/index.js",
+    - "build": "tsc",
+    - "dev": "ts-node src/index.ts
     }
     ****************************************************************
