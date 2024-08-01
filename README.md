@@ -1,6 +1,34 @@
 # ApiFarmaceutica
 
-# Structure of the ApiFarmaceutica
+# Structure folders of the ApiFarmaceutica
+
+
+- **`src/`**: Carpeta principal del código fuente del proyecto.
+  - **`controllers/`**: Contiene los controladores que manejan las solicitudes HTTP y delegan la lógica a los servicios.
+    - **`analisisDatosController.ts`**: Controlador para análisis de datos.
+    - **`medicamentoController.ts`**: Controlador para operaciones relacionadas con medicamentos.
+    - **`pacienteController.ts`**: Controlador para operaciones relacionadas con pacientes.
+  - **`db/`**: Configuración de la conexión a la base de datos.
+    - **`connection.ts`**: Archivo para configurar la conexión con la base de datos MySQL.
+  - **`models/`**: Modelos de datos que definen las estructuras de las tablas de la base de datos.
+    - **`medicamentoModel.ts`**: Modelo para la tabla de medicamentos.
+    - **`pacienteModel.ts`**: Modelo para la tabla de pacientes.
+    - **`prescripcionModel.ts`**: Modelo para la tabla de prescripciones.
+  - **`routes/`**: Rutas de la API, que definen los puntos finales y asignan controladores.
+    - **`analisisDatosRoutes.ts`**: Rutas para análisis de datos.
+    - **`medicamentoRoutes.ts`**: Rutas para operaciones relacionadas con medicamentos.
+    - **`pacienteRoutes.ts`**: Rutas para operaciones relacionadas con pacientes.
+  - **`services/`**: Servicios que contienen la lógica de negocio y acceso a datos.
+    - **`analisisDatosService.ts`**: Servicio para análisis de datos.
+    - **`medicamentoService.ts`**: Servicio para operaciones con medicamentos.
+    - **`pacienteService.ts`**: Servicio para operaciones con pacientes.
+  - **`utils/`**: Utilidades y funciones auxiliares.
+    - **`csvWriter.ts`**: Utilidad para exportar datos a archivos CSV.
+  - **`index.ts`**: Archivo principal para configurar y arrancar el servidor Express.
+- **`tsconfig.json`**: Configuración de TypeScript.
+- **`package.json`**: Archivo de configuración de npm con dependencias y scripts.
+- **`README.md`**: Documentación del proyecto.
+
 /src
   /controllers
     medicamentoController.ts
@@ -34,7 +62,7 @@
 
 1. Initialization of  the Project:
         Create a new folder for the project and open the terminal
-        execute npm init -y for create the package.json
+        execute **npm init -y** for create the package.json
 
 2.  Installation of dependecies:
         Install TypeScript: **npm install typeScript --save-dev**
@@ -51,7 +79,7 @@
 4.  configure scripts for ts:
 
     modify in package.json:
-    
+
     ****************************************************************
     "scripts": {
     "start": "nodemon dist/index.js",
