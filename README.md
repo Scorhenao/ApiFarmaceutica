@@ -63,14 +63,16 @@
 1. Initialization of  the Project:
     - Create a new folder for the project and open the terminal
     - execute: **npm init -y** for create the package.json
+    - execute: **npm install** to use packages
 
 2.  Installation of dependecies:
-    - Install TypeScript: **npm install typeScript --save-dev**
+    - Install TypeScript: **npm install typescript --save-dev**
     - Install ts-node for execute files TypeScript: **npm install ts-node --save-dev**
     - Intall Express: **npm install express**
     - Install mysql2 for connection to the database: **npm install mysql2**
     - Install Nodemon for reset automatically the API: **npm install nodemon --save-dev**
     - Intall @types/express and @types/node for the type of TypeScript: **npm install @types/express @types/node --save-dev**
+    - Install nodejs: **npm install nodejs**
 
 3. Configuration of TypeScript:
     - excecute: **npx tsc --init** to create a file tsconfig.json
@@ -82,7 +84,7 @@
 
     ****************************************************************
     - "scripts": {
-    - "start": "nodemon dist/index.js",
+    - "start": "nodemon index.ts",
     - "build": "tsc",
     - "dev": "ts-node src/index.ts
     }
