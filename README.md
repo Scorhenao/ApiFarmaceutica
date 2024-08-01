@@ -59,11 +59,12 @@
 # installation steps
 ## configuration of the environment
 ### be sure that you have installed NodeJS and NPM
-
+### Proyecto TypeScript con Import y Export
 1. Initialization of  the Project:
     - Create a new folder for the project and open the terminal
     - execute: **npm init -y** for create the package.json
     - execute: **npm install** to use packages
+    
 
 2.  Installation of dependecies:
     - Install TypeScript: **npm install typescript --save-dev**
@@ -89,3 +90,18 @@
     - "dev": "ts-node src/index.ts
     }
     ****************************************************************
+5. configure tsconfig.json
+
+  - "compilerOptions": 
+  - "module": "esnext",
+  - "target": "es6",
+  - "moduleResolution": "node",
+  - "outDir": "./dist",
+  - "rootDir": "./src",
+  - "esModuleInterop": true,
+  - "strict": true,
+  - "skipLibCheck": true
+  
+  - "include": ["src/**/*.ts"],
+  - "exclude": ["node_modules"]
+
