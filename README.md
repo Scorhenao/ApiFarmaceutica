@@ -92,16 +92,22 @@
     ****************************************************************
 5. configure tsconfig.json
 
-  - "compilerOptions": 
-  - "module": "esnext",
-  - "target": "es6",
-  - "moduleResolution": "node",
-  - "outDir": "./dist",
-  - "rootDir": "./src",
-  - "esModuleInterop": true,
-  - "strict": true,
-  - "skipLibCheck": true
-  
-  - "include": ["src/**/*.ts"],
-  - "exclude": ["node_modules"]
+*******************************
+  - {
+    - "compilerOptions": {
+    - "module": "esnext",
+    - "target": "es6",
+    - "moduleResolution": "node",
+    - "outDir": "./dist",
+    - "rootDir": "./src",
+    - "esModuleInterop": true,
+    - "strict": true,
+    - "skipLibCheck": true
+  - },
+    - "include": ["src/**/*.ts"],
+    - "exclude": ["node_modules"]
+ - }
+*******************************
+
+
 
