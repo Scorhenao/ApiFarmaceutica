@@ -74,6 +74,7 @@
     - Install Nodemon for reset automatically the API: **npm install nodemon --save-dev**
     - Intall @types/express and @types/node for the type of TypeScript: **npm install @types/express @types/node --save-dev**
     - Install nodejs: **npm install nodejs**
+    - Install csv-writer  to export data in formate CSV: **npm install csv-writer**
 
 3. Configuration of TypeScript:
     - excecute: **npx tsc --init** to create a file tsconfig.json
